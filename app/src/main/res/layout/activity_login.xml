@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".LoginActivity.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/RR_toolbar"
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <RelativeLayout
+            android:id="@+id/RR_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/back_icon"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="25dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_toRightOf="@+id/RR_back"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login/Register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/RR_toolbar"
+        android:id="@+id/RR_login"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Welcome to kuwait's largest online marketplace!"
+            android:textColor="@color/White"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_user"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_below="@+id/RR_login"
+        android:layout_height="120dp"
+        android:src="@drawable/profile_logo_two"
+        android:layout_marginTop="-60dp"
+        app:civ_border_color="#FF000000"
+        />
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@drawable/edit_textborder"
+            android:id="@+id/RR_countryNumber"
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/img_arrow"
+                android:id="@+id/userName_etxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="965 "
+                android:textSize="18dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:maxLength="30"
+                android:background="@null"
+                android:drawablePadding="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:tint="@color/Gray"
+                android:src="@drawable/arrow_bottom"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/RR_countryNumber"
+            android:background="@drawable/edit_textborder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/ed_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Phone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:text="9988774455"
+                android:maxLength="30"
+                android:background="@null"
+                android:drawablePadding="15dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RR_next"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_textborder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/White"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

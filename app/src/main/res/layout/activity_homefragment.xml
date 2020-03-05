@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RR_toolbar"
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/Gray_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            ></View>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/RR_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/black"
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"/>
+
+            </RelativeLayout>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:layout_below="@+id/relativeLayout2"
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="#F6585A"
+                app:pageColor="#E7E7E7"
+                app:snap="false" />
+
+            <RelativeLayout
+                android:id="@+id/RR_featured"
+                android:layout_below="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view_indicator"
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Featured"
+                    android:textSize="16dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rll_imgsearch_featured"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:tint="@color/colorPrimary"
+                        android:src="@drawable/search_icon"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/recycler_view_featured"
+                android:layout_below="@+id/RR_featured"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/LL_services"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_services"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_services"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/recycler_view_services"
+                android:layout_below="@+id/LL_services"
+                android:layout_marginTop="10dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_add"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/recycler_view_services"
+                android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_family"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_family"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_family"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/recycler_view_family"
+                android:layout_below="@+id/LL_family"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/LL_furniture"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Furniture"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_furniture"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_furniture"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/LL_furniture"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_add_one"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/recycler_view_furniture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_annimalsPets"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_add_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Annimals $ Pets"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_animals"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/recycler_view_annimals_pets"
+                android:layout_below="@+id/LL_annimalsPets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/LL_Camping"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_annimals_pets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camping Equipment"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_camping"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_camping_equipments"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/LL_Camping"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_camping_equipments_add"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/recycler_view_camping_equipments"
+                android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_Jobs"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_camping_equipments_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jobs"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_jobs"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_jobs"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/LL_Jobs"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_teaching_traning"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teaching $ Traning"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_teaching"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layoutDirection="rtl"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_teaching_traning"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/LL_teaching_traning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_teaching_traning_add"
+                android:layout_marginBottom="20dp"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/recycler_view_teaching_traning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_Your_health"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_teaching_traning_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Health"
+                    android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_health"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_your_health"
+                android:layout_marginBottom="20dp"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/LL_Your_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_food"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_your_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foods"
+                    android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_foods"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_foods"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/LL_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_food_add"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/recycler_view_foods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/LL_miscellaneous"
+                android:orientation="vertical"
+                android:layout_below="@+id/recycler_view_food_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/Gray_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    ></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miscellaneous"
+                    android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rll_imgsearch_miscellaneou"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorPrimary"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/search_icon" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycler_view_miscellaneous"
+                android:layout_marginBottom="20dp"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/LL_miscellaneous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

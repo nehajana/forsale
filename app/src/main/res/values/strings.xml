@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FourSale</string>
+    <string name="title_activity_commercial">CommercialActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="hint">Hint your location will not be shown in the details of the item,but will show the area
+    of the item to help users,press to enable ads location.</string>
+    <string name="title_activity_featuring">FeaturingActivity</string>
+    <string name="title_activity_details_product">DetailsProductActivity</string>
+    <string name="title_activity_sub_product_details">SubProductActivityDetails</string>
+    <string name="title_activity_agents">AgentsActivity</string>
+    <string name="title_activity_payment_history">PaymentHistory</string>
+
+
+    //volley
+    <string name="Ok">Ok</string>
+    <string name="loading">Loading...</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="InternetNotAvailabel">Cannot connect to server. Please, check your Internet connectivity.</string>
+    <string name="my_profile">My Profile</string>
+    <string name="password">Password</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_subcategory">SubcategoryActivity</string>
+</resources>

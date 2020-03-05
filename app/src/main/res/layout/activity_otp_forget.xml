@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpForgetPasswordScreen.OtpForgetActivity">
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rll_taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        >
+        <RelativeLayout
+            android:id="@+id/rll_arrow"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imgbkarr"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back_icon_one"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_sgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:layout_centerVertical="true"
+            android:textSize="19dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rll_taskbar">
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbackground_new">
+        <EditText
+            android:id="@+id/edt_mobilenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint = "MobileNumber"
+            android:inputType="number"
+            android:background="@null"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rll_next"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edit_textborder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+</RelativeLayout>

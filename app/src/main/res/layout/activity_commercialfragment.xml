@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_tab"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="All"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Motor"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Property"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="General Contracting $ Craft"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Satellite"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Electronics"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Miscellaneous"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Bugs Exterminator Service"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4SALE"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pack $ Move"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Painter"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Your Health"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Furniture"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cleaning"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_offerboder"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Camping Equipment"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/horizontal_tab"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

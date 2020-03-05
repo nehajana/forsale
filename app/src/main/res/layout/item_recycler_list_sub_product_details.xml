@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/product_icon"
+                android:id="@+id/img_user"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                 />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_2"
+                android:text="Kumaravel"
+                android:textColor="@android:color/white"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:visibility="invisible"/>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Omayli kumalar"-->
+            <!--                android:textColor="@color/colorRed"-->
+            <!--                android:paddingTop="3dp"-->
+            <!--                android:paddingRight="5dp"-->
+            <!--                android:paddingBottom="3dp" />-->
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/redripple"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                >
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Omayli kumalar"
+                    android:textColor="@color/White"
+                    />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/txv_griditem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toyota Max 250 text"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txv_griditem_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txv_griditem_dateunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/week"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

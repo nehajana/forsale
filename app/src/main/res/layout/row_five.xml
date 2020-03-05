@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rll_four_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/camps_fo_rrent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/accountant"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rowFiveText"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/camps_fo_rrent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#c234"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/img_down_arrow"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/down_arrow"/>
+
+    </RelativeLayout>
+</RelativeLayout>

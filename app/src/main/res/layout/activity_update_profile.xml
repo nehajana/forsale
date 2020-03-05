@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileScreen.UpdateProfileActivity">
+    <RelativeLayout
+        android:id="@+id/Rll_signhd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:id="@+id/rll_arrow"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/imgbkarr"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:tint="@color/white"
+                android:src="@drawable/back_icon_one"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_sgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrl_vw"
+        android:layout_below="@+id/Rll_signhd">
+        <RelativeLayout
+            android:id="@+id/Rll_first"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rll_signhd">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="7dp"
+                android:src="@drawable/profile_logo_two"/>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:padding="5dp"
+                android:layout_below="@+id/img_profile"
+                android:layout_width="match_parent"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint = "firstname"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                />
+            <EditText
+                android:id="@+id/edt_email"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/edt_name"
+                android:hint = "email"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:layout_marginTop="20dp"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edt_phone"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint = "phone"
+                android:layout_height="50dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:hint = "shipping_address"
+                android:layout_height="50dp"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edt_city"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:hint = "city"
+                android:layout_height="50dp"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edt_country"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:hint = "country"
+                android:layout_height="50dp"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edt_zipcode"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:hint = "zipcode"
+                android:layout_height="50dp"
+                android:textCursorDrawable="@drawable/edt_line"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/edit_textborder"
+                android:text="Signup"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+</RelativeLayout>
